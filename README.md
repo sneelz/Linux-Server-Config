@@ -12,6 +12,7 @@
 * Confirm user creation: `ls /home`
 
 User: grader
+
 Password: password
 
 

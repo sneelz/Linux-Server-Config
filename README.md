@@ -1,7 +1,5 @@
 # Introduction
 
-##  App Details
-
 * IP Address: 52.91.58.218
 * SSH Port: 2200
 * App URL: http://52.91.58.218.xip.io

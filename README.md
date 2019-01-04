@@ -59,7 +59,7 @@ Saved as: pokedexKey
 ## Change the SSH port from 22 to 2200
 
 * Edit sshd_config: `sudo nano /etc/ssh/sshd_config`
-* Uncomment "# Port 22" and change 22 to 2200: `Port 2200`
+* Change Port 22 to 2200: `Port 2200`
 * Restart SSH service: `sudo service ssh restart`
 
 
@@ -72,6 +72,7 @@ Saved as: pokedexKey
 * Allow new SSH port: `sudo ufw allow 2200/tcp`
 * Allow HTTP: `sudo ufw allow www`
 * Allow NTP: `sudo ufw allow 123/udp`
+* Deny Port 22: `sudo ufw deny 22`
 * Enable updates: `sudo ufw enable`
 * Check status to verify updates: `sudo ufw status`
 
@@ -209,7 +210,8 @@ Note: The path to client_secrets.json needs to be updated in two locations in po
 
 Note: If you run into any errors, run the following command to see the error log: `sudo tail -f /var/log/apache2/error.log`
 
-Resources:
+## Resources
+
 * https://hk.saowen.com/a/0a0048ca7141440d0553425e8df46b16cdf4c13f50df4c5888256393d34bb1b9
 * https://github.com/twhetzel/ud299-nd-linux-server-configuration
 * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps

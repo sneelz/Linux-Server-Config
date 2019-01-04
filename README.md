@@ -191,6 +191,7 @@ Update database calls in database_setup.py and pokedex.py
 * Add: `engine = create_engine('postgresql://pokemaster:password@localhost/pokedexdb')`
 
 Update pokedex.py with full path to client_secrets.json: `/var/www/pokedex/vagrant/catalog/client_secrets.json`
+
 Note: The path to client_secrets.json needs to be updated in two locations in pokedex.py
 
 
@@ -209,6 +210,6 @@ Note: The path to client_secrets.json needs to be updated in two locations in po
 Note: If you run into any errors, run the following command to see the error log: `sudo tail -f /var/log/apache2/error.log`
 
 Resources:
-https://hk.saowen.com/a/0a0048ca7141440d0553425e8df46b16cdf4c13f50df4c5888256393d34bb1b9
-https://github.com/twhetzel/ud299-nd-linux-server-configuration
-https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+* https://hk.saowen.com/a/0a0048ca7141440d0553425e8df46b16cdf4c13f50df4c5888256393d34bb1b9
+* https://github.com/twhetzel/ud299-nd-linux-server-configuration
+* https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
